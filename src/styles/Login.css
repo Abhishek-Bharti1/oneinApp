@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+.child1 {
+  display: flex;
+  background-color: #605bff;
+  padding: 3%;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  clip-path: polygon(0 0, 100% 0, 78% 100%, 0 100%);
+  background-clip: #f8faff;
+}
+
+.base {
+  display: grid;
+  place-items: center;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.socielMedia {
+  color: white;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.child2 {
+  flex: 1;
+  background: #F8FAFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login{
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.buttons button{
+    background-color: white;
+    font-size: 0.5rem;
+    border: none;
+    padding: 12px;
+    color: #999999;
+   border-radius: 0.5rem;
+
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 2rem;
+   background-color: white;
+   border-radius: 1rem;
+}
+.label{
+    font-size: 10px;
+}
+.input{
+    border-radius: 4px;
+    height: 2.5rem;
+    border: none;
+    background-color: #999999;
+}
+.fg-rh{
+    color: #605bff;
+    font-size: 14px;
+}
+.signin{
+    border: none;
+    padding: 12px;
+    border-radius: 0.5rem;
+    color: white;
+  background-color: #605bff;
+
+}

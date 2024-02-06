@@ -1,0 +1,66 @@
+.table-tr{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    height: 58px;
+  }
+
+  .tableHeader{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputStyle {
+    width: 150px;
+    height: 32px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid #F2F2F2;
+  }
+
+  .optionStyle {
+    width: 134px;
+    height: 40px;
+    background: #F5F5F5;
+    border-radius: 8px;
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .customTag {
+    background:#605bff;
+    color: white;
+    width: 5rem;
+    height: 34px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerStyle {
+    background: #F5F5F5;
+    width: 100%;
+    padding: 20px;
+  }
+  .flexContainer {
+    display: flex;
+    gap: 0.5rem;
+    width: 30%;
+  }
