@@ -84,6 +84,9 @@ const Table = () => {
 
 
     return (
+        <>
+        <h3>Uploads</h3>
+
         <div className='containerStyle'>
             <div className='table-tr'>
             {tableItem.map(tab=> (<p style={{ width: `${tab.width}` }}>{tab.name}</p>))}
@@ -126,6 +129,8 @@ const Table = () => {
             }
 
         </div>
+        </>
+
     );
 };
 
