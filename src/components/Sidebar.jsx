@@ -7,6 +7,7 @@ import { IoNotificationsOutline } from "react-icons/io5";
 import { IoMdSettings } from "react-icons/io";
 import "../styles/Sidebar.css";
 import { Base } from '../constant/constant';
+import { Link } from 'react-router-dom';
 const Sidebar = () => {
   const navbarData = [
     {
@@ -35,7 +36,9 @@ const Sidebar = () => {
   ]
   return (
     <div className='sidebar'>
-      <div className='logo'>
+   
+     <div className='logo'>
+     <Link to="/">
         <svg
           width="81"
           height="81"
@@ -51,6 +54,8 @@ const Sidebar = () => {
             fill="none"
           />
         </svg>
+     </Link>
+
         <h3>{Base}</h3>
       </div>
       {

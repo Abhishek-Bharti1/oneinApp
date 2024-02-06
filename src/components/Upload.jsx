@@ -1,6 +1,7 @@
 import React from 'react'
 import { HiOutlineUpload } from "react-icons/hi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { BROWSE, DROP_EXCEL_HERE, IMAGE_URL, REMOVE,UPLOAD } from '../constant/constant';
 const Upload = (props) => {
     const {count, handleClick} = props;
     
@@ -8,14 +9,15 @@ const Upload = (props) => {
         <div className='uploadContent'>
             <div className='skeleton'>
                 <div className='fileIcon'>
-                    <img src='https://techcommunity.microsoft.com/t5/image/serverpage/image-id/375416i783713B05CAD4A92/image-size/medium?v=v2&px=400' alt='logo' />
+                    <img src={IMAGE_URL} alt="logo"/>
 
-                    {count === 0 ? <p>Drop your excel sheet here or <span style={{ color: "#605bff" }}>browse</span></p> : <p style={{ color: "red" }}>Remove</p>}
+                    {count === 0 ? <p>{DROP_EXCEL_HERE} <span style={{ color: "#605bff" }}>{BROWSE}</span></p> : <p style={{ color: "red" }}>{REMOVE}</p>}
+
 
                 </div>
             </div>
             <div className={count > 1? 'disableUploadButton': 'uploadButton' }>
-                <button disabled={count > 1 && true} onClick={handleClick}>{(count === 0 || count > 1) ? (<span style={{ fontSize: "16px" }}><HiOutlineUpload />&nbsp;&nbsp;Upload</span>) : <AiOutlineLoading3Quarters style={{ fontSize: "1.5rem" }} />}</button>
+                <button disabled={count > 1 && true} onClick={handleClick}>{(count === 0 || count > 1) ? (<span style={{ fontSize: "16px" }}><HiOutlineUpload />&nbsp;&nbsp;{UPLOAD}</span>) : <AiOutlineLoading3Quarters style={{ fontSize: "1.5rem" }} />}</button>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaDiscord, FaApple } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { FcGoogle } from "react-icons/fc";
 import {  useNavigate } from "react-router-dom";
-import { Base, SignIn } from "../constant/constant";
+import { Base, BY_APPLE, BY_GOOGLE, DONT_HAVE_ACCOUNT, REGISTER, SignIn, SIGN_IN_ACCOUNT } from "../constant/constant";
 const Login = () => {
   const navigate = useNavigate();
   const handleClick = ()=>{
@@ -45,18 +45,18 @@ const Login = () => {
         <div className="login">
           <div className="heading">
             <h1>{SignIn}</h1>
-            <span>Sign in to your account</span>
+            <span>{SIGN_IN_ACCOUNT}</span>
             <div className="buttons">
               <button>
                 <span>
                   <FcGoogle style={{paddingRight:"5px",fontSize:"1rem"}}/>
-                Sign in with Google
+                {BY_GOOGLE}
                 </span>
               </button>
               <button>
                 <span>
                   <FaApple style={{paddingRight:"5px",fontSize:"1rem"}}/>
-                Sign in with Apple
+               {BY_APPLE}
                 </span>
               </button>
             </div>
@@ -67,10 +67,10 @@ const Login = () => {
             <label className="label">Password</label>
             <input className="input" type="password" placeholder="Enter Password" />
             <span className="fg-rh">Forgot password?</span>
-            <button onClick={handleClick} className="signin">Sign In</button>
+            <button onClick={handleClick} className="signin">{SignIn}</button>
           </div>
           <p style={{textAlign:"center",color:"#999999",fontSize:"0.7rem"}}>
-            Don't have an account? <span className="fg-rh">Register here</span>
+            {DONT_HAVE_ACCOUNT} <span className="fg-rh">{REGISTER}</span>
           </p>
         </div>
       </div>

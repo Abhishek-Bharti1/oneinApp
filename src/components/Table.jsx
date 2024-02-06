@@ -89,7 +89,7 @@ const Table = () => {
 
         <div className='containerStyle'>
             <div className='table-tr'>
-            {tableItem.map(tab=> (<p style={{ width: `${tab.width}` }}>{tab.name}</p>))}
+            {tableItem?.map(tab=> (<p style={{ width: `${tab.width}` }}>{tab.name}</p>))}
             </div>
 
             {
