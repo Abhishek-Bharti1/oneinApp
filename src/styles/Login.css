@@ -87,6 +87,7 @@
   border-radius: 0.5rem;
   color: white;
   background-color: #605bff;
+  cursor: pointer;
 }
 .mobNavbar{
 display: none;

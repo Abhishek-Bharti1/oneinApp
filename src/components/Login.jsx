@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Login.css";
 import { FaGithub, FaLinkedin, FaDiscord, FaApple } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import { FcGoogle } from "react-icons/fc";
 import {  useNavigate } from "react-router-dom";
 import { Base, BY_APPLE, BY_GOOGLE, DONT_HAVE_ACCOUNT, REGISTER, SignIn, SIGN_IN_ACCOUNT } from "../constant/constant";
+import { toast } from 'react-toastify';
 const Login = () => {
   const navigate = useNavigate();
-  const handleClick = ()=>{
-    navigate("/uploadcsv");
-  }
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+  
+    const handleClick = () => {
+      if (!email.trim() || !password.trim()) {
+        // Show toast message if fields are empty
+        toast.error('Please fill in all fields');
+        return;
+      }
+      // Proceed with your login logic
+      console.log('Email:', email);
+      console.log('Password:', password);
+      navigate("/uploadcsv");
+    };
+  
   return (
     <div className="container">
       <div className="child1">
@@ -82,13 +95,27 @@ const Login = () => {
             </div>
           </div>
           <div className="loginForm">
-            <label className="label">Email address</label>
-            <input className="input" type="email" placeholder="Enter Email" />
-            <label className="label">Password</label>
-            <input className="input" type="password" placeholder="Enter Password" />
-            <span className="fg-rh">Forgot password?</span>
-            <button onClick={handleClick} className="signin">{SignIn}</button>
-          </div>
+      <label className="label">Email address</label>
+      <input
+        className="input"
+        type="email"
+        placeholder="Enter Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <label className="label">Password</label>
+      <input
+        className="input"
+        type="password"
+        placeholder="Enter Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <span className="fg-rh">Forgot password?</span>
+      <button onClick={handleClick} className="signin">
+        SignIn
+      </button>
+    </div>
           <p style={{textAlign:"center",color:"#999999",fontSize:"0.7rem"}}>
             {DONT_HAVE_ACCOUNT} <span className="fg-rh">{REGISTER}</span>
           </p>
