@@ -88,6 +88,9 @@
   color: white;
   background-color: #605bff;
 }
+.mobNavbar{
+display: none;
+ }
 @media only screen and (min-width: 200px) and (max-width: 500px) {
   .child1 {
     display: none;

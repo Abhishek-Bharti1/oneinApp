@@ -34,7 +34,7 @@ const Login = () => {
           <span>{Base}</span>
 
         </div>
-        <div className="socielMediaMob">
+        <div className="socielMedia">
           <FaGithub />
           <FiTwitter />
           <FaLinkedin />
