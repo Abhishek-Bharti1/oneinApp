@@ -34,12 +34,32 @@ const Login = () => {
           <span>{Base}</span>
 
         </div>
-        <div className="socielMedia">
+        <div className="socielMediaMob">
           <FaGithub />
           <FiTwitter />
           <FaLinkedin />
           <FaDiscord />
         </div>
+      </div>
+      <div className="mobNavbar">
+    <p>
+    <svg
+            width="81"
+            height="81"
+            viewBox="0 0 81 81"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="40.1102" cy="40.3929" r="40.0765" fill="#FCFCFF" />
+            <path
+              d="M0 40L20 30L40 40L50 30L80 40"
+              stroke="#605BFF"
+              stroke-width="4"
+              fill="none"
+            />
+          </svg>
+    </p>
+          <span>{Base}</span>
       </div>
       <div className="child2">
         <div className="login">
@@ -73,6 +93,7 @@ const Login = () => {
             {DONT_HAVE_ACCOUNT} <span className="fg-rh">{REGISTER}</span>
           </p>
         </div>
+     
       </div>
     </div>
   );

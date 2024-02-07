@@ -1,33 +1,36 @@
-.sidebar{
+.sidebar {
     width: 15%;
     margin-top: 1rem;
-}
-.sidebarCard{
+  }
+  .sidebarCard {
     display: flex;
     gap: 1rem;
-padding: 1rem 2rem 2rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
+  }
+  @media only screen and (min-width: 200px) and (max-width: 500px) {
+    .sidebar {
+      display: none;
+    }
+  }
   
-
-}
-
-.sidebarCard span{
+  .sidebarCard span {
     color: #999999;
     font-size: 18px;
-}
-
-.sidebarCard p{
+  }
+  
+  .sidebarCard p {
     color: #999999;
     font-size: 16px;
-}
-.logo{
+  }
+  .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
-
-}
-.logo h3{
+  }
+  .logo h3 {
     font-size: 1.5rem;
     font-family: Nunito !important;
-}
+  }
+  

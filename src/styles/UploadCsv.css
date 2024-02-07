@@ -5,7 +5,7 @@
 }
 .csvPage{
     background-color: #F8FAFF;
-    width: 85%;
+    width: 100%;
  
 }
 .navbar{
@@ -31,6 +31,35 @@
     height: 78%;
     border-radius: 1rem;
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+@media only screen and (min-width:200px) and (max-width:500px){
+    .uploadContent{
+        width:90%
+    }
+    .head h3 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+      }
+  
+      .profile {
+        display: none; /* Hide profile icons on smaller screens */
+      }
+  
+      .hamburger {
+        display: block; /* Display hamburger icon on smaller screens */
+      }
+    }
+
 .skeleton{
     border: 1px dotted;
     display: flex;
@@ -72,6 +101,8 @@ cursor: pointer;
     background-color:#F8FAFF ;
 
 }
+
+
 
 .disableUploadButton button{
     width: 100%;

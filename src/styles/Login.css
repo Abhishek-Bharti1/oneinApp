@@ -31,63 +31,89 @@
 }
 .child2 {
   flex: 1;
-  background: #F8FAFF;
+  background: #f8faff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.login{
-    height: 100%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+.login {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
-.heading{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
-.buttons{
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
-.buttons button{
-    background-color: white;
-    font-size: 0.5rem;
-    border: none;
-    padding: 12px;
-    color: #999999;
-   border-radius: 0.5rem;
-
+.buttons button {
+  background-color: white;
+  border: none;
+  padding: 12px;
+  color: #999999;
+  border-radius: 0.5rem;
 }
-.loginForm{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 2rem;
-   background-color: white;
-   border-radius: 1rem;
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
 }
-.label{
-    font-size: 10px;
+.label {
+  font-size: 10px;
 }
-.input{
-    border-radius: 4px;
-    height: 2.5rem;
-    border: none;
-    background-color: #999999;
+.input {
+  border-radius: 4px;
+  height: 2.5rem;
+  border: none;
+  background-color: #999999;
 }
-.fg-rh{
-    color: #605bff;
-    font-size: 14px;
+.fg-rh {
+  color: #605bff;
+  font-size: 14px;
 }
-.signin{
-    border: none;
-    padding: 12px;
-    border-radius: 0.5rem;
-    color: white;
+.signin {
+  border: none;
+  padding: 12px;
+  border-radius: 0.5rem;
+  color: white;
   background-color: #605bff;
+}
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .child1 {
+    display: none;
+  }
+ .container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+ }
+ .mobNavbar{
+  background-color: #605bff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 7rem;
+ }
+ .mobNavbar p{
+margin-left: 1rem;
+ }
+ .mobNavbar span{
+color: white;
+font-size: 1.5rem;
+ }
+ .login{
+  height: 100%;
+  display: block;
+ }
 
 }
