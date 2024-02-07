@@ -1,6 +1,8 @@
 .container {
   display: flex;
   height: 100vh;
+  background: #f8faff;
+
 }
 .child1 {
   display: flex;

@@ -14,7 +14,7 @@ const Login = () => {
     const handleClick = () => {
       if (!email.trim() || !password.trim()) {
         // Show toast message if fields are empty
-        toast.error('Please fill in all fields');
+        toast.error('Please fill in all fields or signin with Google');
         return;
       }
       navigate("/uploadcsv");
