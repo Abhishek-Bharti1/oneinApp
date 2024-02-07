@@ -17,9 +17,6 @@ const Login = () => {
         toast.error('Please fill in all fields');
         return;
       }
-      // Proceed with your login logic
-      console.log('Email:', email);
-      console.log('Password:', password);
       navigate("/uploadcsv");
     };
   
