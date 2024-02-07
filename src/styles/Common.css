@@ -5,4 +5,8 @@
     /* text-decoration: none; */
     font-family: Montserrat;
 }
+button{
+  cursor: pointer;
+
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Urbanist:wght@100&family=Work+Sans:wght@300&display=swap');

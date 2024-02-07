@@ -9,15 +9,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/uploadcsv" element={<UploadCSV />} />
-        <Route path="*" element={<NotFound />} />
+      
       </Routes>
     </Router>
   );
 }
 
 // Add a NotFound component to handle routes that don't match
-function NotFound() {
-  return <h1>404 - Not Found</h1>;
-}
+
 
 export default App;

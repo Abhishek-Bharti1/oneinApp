@@ -19,7 +19,9 @@ const Login = () => {
       }
       navigate("/uploadcsv");
     };
-  
+    const handleGoogleSignIn = () => {
+      window.location.href = 'https://backend-tau-ruddy.vercel.app/auth/google';
+    };
   return (
     <div className="container">
       <div className="child1">
@@ -77,7 +79,7 @@ const Login = () => {
             <h1>{SignIn}</h1>
             <span>{SIGN_IN_ACCOUNT}</span>
             <div className="buttons">
-              <button>
+              <button onClick={handleGoogleSignIn}>
                 <span>
                   <FcGoogle style={{paddingRight:"5px",fontSize:"1rem"}}/>
                 {BY_GOOGLE}
